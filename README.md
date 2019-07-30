@@ -8,15 +8,17 @@ Find this [image on dockerhub](https://registry.hub.docker.com/u/jespada/collect
 
 If you want, you can adjust the config file `collectd.conf` to your needs.
 After that, run:
-    `docker build -t jespada/collectd`
-    
-    `docker run -it --rm jespada/collectd`
+
+`docker build -t jespada/collectd`
+
+`docker run -it --rm jespada/collectd`
     
 You can also write your data to any endpoint supported by collectd.
 For instance run the following to write the collectd metrics into Kafka:
-    `docker-compose build`
 
-    `docker-compose up`
+`docker-compose build`
+
+`docker-compose up`
     
 You can check kafka topic with:
 
